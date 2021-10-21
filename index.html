@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz Test</title>
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {background-color: #4CAF50;}
+</style>
+</head>
+<body background="http://1.bp.blogspot.com/-7o5mNHKIICc/VtTC9JZ67tI/AAAAAAAAANY/FJpFn4SXboE/s1600/quiz-retraite.jpg">
+<h1 style="text-align:center;">
+1.Anchikning miyasiga nima bo'lgan?<br></h1>
+<input type="radio" name="question1" id="correct1">chirib ketgan<br>
+<input type="radio" name="question1">aqlli<br>
+<input type="radio" name="question1">jinni<br>
+<input type="radio" name="question1">bilmasam<br>
+<h1 style="text-align:center;">
+2.Anchikning yoshi nechida?<br></h1>
+<input type="radio" name="question2" >bilmasam<br>
+<input type="radio" name="question2">13<br>
+<input type="radio" name="question2" id="correct2">14<br>
+<input type="radio" name="question2">1<br>
+
+<h1 style="text-align:center;">
+3.Anchik uyquchimi?<br></h1>
+<input type="radio" name="question3" >ha<br>
+<input type="radio" name="question3"id="correct3">bilmasam<br>
+<input type="radio" name="question3">yo'q<br>
+<input type="radio" name="question3">to'g'ri javob yo'q<br>
+<h1 style="text-align:center;">
+<input type="submit" name="submit" value="Yuborish" onClick="result()">
+</h1>
+<script type="text/javascript">
+function result()
+{
+	var score=0;
+	if(document.getElementById('correct1').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct2').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct3').checked)
+		{	score++;
+		}
+ alert("To'gri javoblaringiz:"+score+"ta");
+}
+</script>
+</body>
+</html>
